@@ -2,28 +2,43 @@
  * 
  */
 package fiu.edu.SecondThought;
-
-import java.util.Scanner;
-
 /**
  * @author simon
  *
  */
 public class Employee {
-	
+	private int companyId;
 	private String companyName;
+	private String review;
 	private String employeeEmail;
+	private String status;
+	private boolean IsCompanyAdministrator;
 	
-	public void giveReview() {
-		
-		Scanner myReivew = new Scanner(System.in);  
-		String Review;
-		
-		 // Enter review and press Enter
-	    System.out.print("Enter Review: "); 
-	    Review = myReivew.nextLine();
-	    
-		System.out.println("Employee Review is: " + Review);
+	public Employee (int companyId, String companyName, String employeeEmail, String status, String review){
+		this.companyId=companyId;
+		this.review=review;
+		this.companyName=companyName;
+		this.status=status;
+		this.employeeEmail=employeeEmail;
+	 }
+	
+	public String giveReview() {
+		return review;
 	}
 
+	public int getCompanyID() {
+		return companyId;
+	}
+	
+	public String getcampanyName(){
+		return companyName;
+	    }
+	
+	public String getStatus() {
+		return status;
+	}
+	
+	public String getEmployeeEmail() {
+		return employeeEmail;
+	}
 }
