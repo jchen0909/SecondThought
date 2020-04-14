@@ -1,1 +1,1 @@
-# SecindThrought
+# SecondThrought
