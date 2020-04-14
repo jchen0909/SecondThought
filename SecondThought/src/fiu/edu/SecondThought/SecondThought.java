@@ -7,13 +7,70 @@ package fiu.edu.SecondThought;
  *
  */
 public class SecondThought {
-
 	/**
-	 * @param args
+	 * @param args 
+	 * SecondThought Application to run the result for each class	 * 
+	 * In a main class 
+	 * create a section for each class information
+	 * create a new object for each class
+	 * call subclass method from superclass
+	 * print the necessary information
 	 */
+	
+	public void getReview() {
+		//method to return review
+	}
+	
+	public void showUserPost() {
+		//method to return User Post
+	}
+	
+	public void showSocialMediaReview() {
+		//method to return show media review
+	}
+	
+	public void showConpanyReport() {
+		//method to return company report
+	}
+	
+	public void likePost() {
+		//method to return like this post
+	}
+	
+	public void sharePost() {
+		//method to return share this post
+	}
+	
+	public void commentPost() {
+		//method to return leave comment to the post
+	}
+	
+	public void subscribeCompany() {
+		//method to return subscribe company
+	}
+
+	public void unsubscribeCompany() {
+		//method to return unsubscribe company 
+	}
+	
+	public void validateUserType() {
+		//method to return validate user type
+	}
+	
+	public void getUserSetting() {
+		//method to return user setting
+	}
+	
+	public void search() {
+		//method to return search company
+	}
+	
+	public void getFeed() {
+		//method to return company feed		
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+		//employee information 
 		System.out.println("Employee Information");
 		Employee mary;
 		mary=new Employee(1, "FIU", "This is a good company", "Acitived", "jchen122@fiu.edu");
@@ -23,10 +80,11 @@ public class SecondThought {
 				"\n Employee E-mail: "+mary.getEmployeeEmail() +
 				"\n Employee Status: "+mary.getStatus());
 		
+		//user information
 		System.out.println();
 		System.out.println("User Information");
 		User register;
-		register = new User("1", "fiu1222DGX@I06", "chenjiusheng1992@gmail.com", false, false, null);
+		register = new User("1", "fiu1222DGX@I06", "chenjiusheng1992@gmail.com", true, true, null);
 		System.out.println("\n SignUp: "+register.signUp()+
 				"\n Forget Password: "+register.forgetPassword()+
 				"\n Forget User ID: "+register.forgetUserid() +
@@ -34,6 +92,7 @@ public class SecondThought {
 				"\n Payment: "+register.getPaymentstatus()+
 				"\n Logout: "+register.Logout());
 		
+		//admin information 
 		System.out.println();
 		System.out.println("Admin Information");
 		Admin myAdmin;
@@ -43,6 +102,7 @@ public class SecondThought {
 				"\n Company Questions: " +myAdmin.manageCompanyquestions()+
 				"\n Social Media: " +myAdmin.manageSocialmedia());
 		
+		//company information
 		System.out.println();
 		System.out.println("Company Information");
 		Company myCompany;
@@ -52,12 +112,14 @@ public class SecondThought {
 				"\n Advertise: " +myCompany.advertiseCompany()+
 				"\n register: " +myCompany.register());
 		
+		//guest information
 		System.out.println();
 		System.out.println("Guest Information");
 		Guest myGuest;
 		myGuest = new Guest("sam@gmail.com");
 		System.out.println("\n "+myGuest.getstatus());
 		
+		//company information
 	    System.out.println();
 		System.out.println("Company Question");
 		Questionnaire myQues;
@@ -66,6 +128,7 @@ public class SecondThought {
 				"\n Moral Question: "+ myQues.getMoralquestions()+
 				"\n Daily Activity Question: "+ myQues.getDailyactivityquestions());
 		
+		//review
 		System.out.println();
 		System.out.println("Review");
 		Review myReview;
@@ -75,6 +138,7 @@ public class SecondThought {
 				"\n Emoji Type: " + myReview.SelectSademoji()+
 				"\n " +myReview.comment());
 	
+		//social media review
 		System.out.println();
 		System.out.println("Social Media Review");
 		SocialMediaReview mySMR;
@@ -83,7 +147,7 @@ public class SecondThought {
 				" \n Reevirw for " +mySMR.getReviews()+
 				" \n Analize Review for " +mySMR.analizeReviews());
 		
-		
+		//user post
 		System.out.println();
 		System.out.println("User Post");
 		UserPost myPost;
@@ -93,6 +157,7 @@ public class SecondThought {
 				"\n Delete Post: "+ myPost.deletePost()+
 				"\n Review Post: "+ myPost.reviewPost());
 		
+		//user setting
 		System.out.println();
 		System.out.println("User Setting");
 		UserSetting mysetting;
@@ -102,12 +167,14 @@ public class SecondThought {
 				"\n " +mysetting.changeGeneralinfomation()+
 				"\n " +mysetting.communicationPreference());
 		
+		//payment
 		System.out.println();
 		System.out.println("Payment");
 		Payment myPayment;
 		myPayment = new Payment("Visa");
 		System.out.println("\n Payment Method: " +myPayment.passPaymenttoprocessor());
 		
+		//function role
 		System.out.println();
 		System.out.println("Function Role");
 		FunctionRole myrole;
@@ -116,6 +183,7 @@ public class SecondThought {
 				"\n Delete Function Role -- " +myrole.deleteFunctionrole()+
 				"\n Rename Function Role -- " +myrole.renameFunctionrole());
 		
+		//company report
 		System.out.println();
 		System.out.println("Company Report");
 		CompanyReport myreport;
@@ -123,13 +191,6 @@ public class SecondThought {
 		System.out.println("\n Happy Emoji: " + myreport.countHappyemoji()+
 				"\n Neutral Emoji: " + myreport.countNeutralemoji()+
 				"\n Sad Emoji: " + myreport.countSademoji());
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
