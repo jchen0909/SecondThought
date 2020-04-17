@@ -7,15 +7,11 @@ package fiu.edu.SecondThought;
  * @author simon
  *create 'review' class store rating emoji for company
  */
-public class Review {
+public class Review extends SecondThought{
 	
 	//variable declaration 
 	private String emojiType;
 	
-	//create constructor
-	public Review(String emojiType) {
-		this.emojiType=emojiType;
-	}
 	
 	//return emoji type
 	public String selectHappyemoji() {

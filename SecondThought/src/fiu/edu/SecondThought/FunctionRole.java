@@ -13,11 +13,6 @@ public class FunctionRole {
 	private String functionID;
 	private String functionName;
 	
-	//create constructor
-	public FunctionRole(String functionID, String functionName) {
-		this.functionID=functionID;
-		this.functionName=functionName;
-	}
 	
 	// return function role and function name to add
 	public String addFunctionrole() {

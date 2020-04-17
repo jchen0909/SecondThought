@@ -7,7 +7,7 @@ package fiu.edu.SecondThought;
  * @author simon
  * create a 'CompanyReport' class store all company report
  */
-public class CompanyReport {
+public class CompanyReport extends SecondThought {
 
 	//variable declaration 
 	private String companyName;
@@ -43,8 +43,8 @@ public class CompanyReport {
 	}
 	
 	//return analysis for company report
-	public void preformAnalytics() {
-		
+	public String preformAnalytics() {
+		return " Company Name is: " + companyName + "\n Function Role is: " + functionName + "\n Question Type is: " + questionnaireType + "\n Happy Emoji: " + isHappyemoji;
 	}
 	
 	//return bar chart for report

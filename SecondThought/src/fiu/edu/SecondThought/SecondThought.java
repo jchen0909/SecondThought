@@ -6,10 +6,9 @@ package fiu.edu.SecondThought;
  * @author simon
  *
  */
-public class SecondThought {
+class SecondThought {
 	/**
-	 * @param args 
-	 * SecondThought Application to run the result for each class	 * 
+	 * @param args SecondThought Application to run the result for each class	 * 
 	 * In a main class 
 	 * create a section for each class information
 	 * create a new object for each class
@@ -19,178 +18,138 @@ public class SecondThought {
 	
 	public void getReview() {
 		//method to return review
+		System.out.println("Employee review is:");
 	}
 	
 	public void showUserPost() {
 		//method to return User Post
+		System.out.println("User Post is:");
 	}
-	
-	public void showSocialMediaReview() {
-		//method to return show media review
-	}
-	
+		
 	public void showConpanyReport() {
 		//method to return company report
+		System.out.println("This is the company report:");
 	}
 	
 	public void likePost() {
 		//method to return like this post
+		System.out.println("Which post does user like? ");
 	}
 	
 	public void sharePost() {
 		//method to return share this post
+		System.out.println("Which post does user want to share? ");
 	}
 	
 	public void commentPost() {
 		//method to return leave comment to the post
+		System.out.println("Which post does user want to leave comment? ");
 	}
 	
 	public void subscribeCompany() {
 		//method to return subscribe company
+		System.out.println("Which company do you want to subscribe? ");
 	}
 
 	public void unsubscribeCompany() {
-		//method to return unsubscribe company 
+		//method to return unsubscribe company
+		System.out.println("Which company do you want to unsubscribe? ");
 	}
 	
 	public void validateUserType() {
 		//method to return validate user type
+		System.out.println("Is user administrator: ");
 	}
 	
 	public void getUserSetting() {
 		//method to return user setting
+		System.out.println("User Setting");
 	}
 	
 	public void search() {
 		//method to return search company
+		System.out.println("Which company do you want to search? ");
 	}
 	
 	public void getFeed() {
 		//method to return company feed		
+		System.out.println("Feedback? ");
 	}
 	
-	public static void main(String[] args) {
-		//employee information 
-		System.out.println("Employee Information");
-		Employee mary;
-		mary=new Employee(1, "FIU", "This is a good company", "Acitived", "jchen122@fiu.edu");
-		System.out.println("\n Company ID: "+mary.getCompanyID() +
-				"\n Company Name: "+mary.getcampanyName() +
-				"\n Employee Review: "+mary.giveReview() +
-				"\n Employee E-mail: "+mary.getEmployeeEmail() +
-				"\n Employee Status: "+mary.getStatus());
-		
-		//user information
-		System.out.println();
-		System.out.println("User Information");
-		User register;
-		register = new User("1", "fiu1222DGX@I06", "chenjiusheng1992@gmail.com", true, true, null);
-		System.out.println("\n SignUp: "+register.signUp()+
-				"\n Forget Password: "+register.forgetPassword()+
-				"\n Forget User ID: "+register.forgetUserid() +
-				"\n Authentication: "+register.Authentication() +
-				"\n Payment: "+register.getPaymentstatus()+
-				"\n Logout: "+register.Logout());
-		
-		//admin information 
-		System.out.println();
-		System.out.println("Admin Information");
-		Admin myAdmin;
-		myAdmin = new Admin("High");
-		System.out.println("\n Access level: " +myAdmin.getAccesslevel()+
-				"\n Company Registration: " +myAdmin.approveRegistration()+
-				"\n Company Questions: " +myAdmin.manageCompanyquestions()+
-				"\n Social Media: " +myAdmin.manageSocialmedia());
-		
-		//company information
-		System.out.println();
-		System.out.println("Company Information");
-		Company myCompany;
-		myCompany = new Company("1", "FIU", "11200 SW 8th St", "Miami", "FL", "US", "www.fiu.edu", true);
-		System.out.println("\n Company Report: " +myCompany.getReport()+
-				"\n Subscribe Report: " +myCompany.subscribeReport()+
-				"\n Advertise: " +myCompany.advertiseCompany()+
-				"\n register: " +myCompany.register());
-		
-		//guest information
-		System.out.println();
-		System.out.println("Guest Information");
-		Guest myGuest;
-		myGuest = new Guest("sam@gmail.com");
-		System.out.println("\n "+myGuest.getstatus());
-		
-		//company information
-	    System.out.println();
-		System.out.println("Company Question");
-		Questionnaire myQues;
-		myQues= new Questionnaire(true, true, true);
-		System.out.println("\n Culture Question: "+ myQues.getCulturequestions()+
-				"\n Moral Question: "+ myQues.getMoralquestions()+
-				"\n Daily Activity Question: "+ myQues.getDailyactivityquestions());
-		
-		//review
-		System.out.println();
-		System.out.println("Review");
-		Review myReview;
-		myReview= new Review(null);
-		System.out.println("\n Emoji Type: " + myReview.selectHappyemoji()+
-				"\n Emoji Type: " + myReview.selectNeutralemoji()+
-				"\n Emoji Type: " + myReview.SelectSademoji()+
-				"\n " +myReview.comment());
-	
-		//social media review
-		System.out.println();
-		System.out.println("Social Media Review");
-		SocialMediaReview mySMR;
-		mySMR= new SocialMediaReview(null, null);
-		System.out.println(" \n " +mySMR.APIconnect()+
-				" \n Reevirw for " +mySMR.getReviews()+
-				" \n Analize Review for " +mySMR.analizeReviews());
-		
-		//user post
-		System.out.println();
-		System.out.println("User Post");
-		UserPost myPost;
-		myPost = new UserPost(null, null, null);
-		System.out.println("\n Post ID: "+ myPost.addPost()+
-				"\n Edit Post: "+ myPost.editPost()+
-				"\n Delete Post: "+ myPost.deletePost()+
-				"\n Review Post: "+ myPost.reviewPost());
-		
-		//user setting
-		System.out.println();
-		System.out.println("User Setting");
-		UserSetting mysetting;
-		mysetting= new UserSetting(null, "Yellow", null);
-		System.out.println("\n " +mysetting.createDashboard()+
-				"\n Background color change to: " +mysetting.changeBackgroundcolor()+
-				"\n " +mysetting.changeGeneralinfomation()+
-				"\n " +mysetting.communicationPreference());
-		
-		//payment
-		System.out.println();
-		System.out.println("Payment");
-		Payment myPayment;
-		myPayment = new Payment("Visa");
-		System.out.println("\n Payment Method: " +myPayment.passPaymenttoprocessor());
-		
-		//function role
-		System.out.println();
-		System.out.println("Function Role");
-		FunctionRole myrole;
-		myrole = new FunctionRole("1", "Analytics");
-		System.out.println("\n Add Function Role -- " +myrole.addFunctionrole()+
-				"\n Delete Function Role -- " +myrole.deleteFunctionrole()+
-				"\n Rename Function Role -- " +myrole.renameFunctionrole());
-		
-		//company report
-		System.out.println();
-		System.out.println("Company Report");
-		CompanyReport myreport;
-		myreport = new CompanyReport("FIU", "Analytics", "Daily activity", true, true, true);
-		System.out.println("\n Happy Emoji: " + myreport.countHappyemoji()+
-				"\n Neutral Emoji: " + myreport.countNeutralemoji()+
-				"\n Sad Emoji: " + myreport.countSademoji());
+	public void showPopUpMessage() {
+		//return the method to show whether the post is successful or not.
+		System.out.println("Post Confirmation ");
 	}
 
-}
+
+
+	public static void main(String[] args) {
+		
+		System.out.println("This is SecondThought Application \n");
+		//create myEmp object
+		Employee myEmp = new Employee();
+			
+		// Call the getReview() method (from the SecondThought class) on the myEmp object
+		myEmp.getReview();
+			
+		// Display the value of the review attribute (from the Employee class) and getReview() method from the SecondThought class
+		System.out.println(myEmp.giveReview()+"\n");
+		
+		UserPost myUP = new UserPost();
+		myUP.showUserPost();
+		System.out.println(myUP.reviewPost()+"\n ");	
+		
+		CompanyReport myCR = new CompanyReport("FIU", "Analytics", "Daily Activity", true, false, false);
+		myCR.showConpanyReport();
+		System.out.println(myCR.preformAnalytics()+"\n");
+		
+		UserPost myLP = new UserPost();
+		myLP.likePost();
+		System.out.println(myLP.addPost()+"\n");   
+		
+		UserPost mySP = new UserPost();
+		mySP.sharePost();
+		System.out.println(mySP.editPost()+"\n");
+		
+		UserPost myCP = new UserPost();
+		myCP.commentPost();
+		System.out.println(myCP.deletePost()+"\n");
+		
+		Company mysc = new Company();
+		mysc.subscribeCompany();
+		System.out.println(mysc.subscribeReport()+"\n");
+		
+		Company mync = new Company();
+		mync.unsubscribeCompany();
+		System.out.println(mync.getReport()+"\n");
+		
+		Employee myEmp1 = new Employee();
+		myEmp1.validateUserType();
+		System.out.println(" "+myEmp.getStatus()+"\n");
+		
+		UserSetting mysetting = new UserSetting("dog", "black", "myPicture");
+		mysetting.getUserSetting();
+		System.out.println(mysetting.createDashboard() +"\n");
+		
+		Company mySearch = new Company();
+		mySearch.search();
+		System.out.println(" "+mySearch.getReport()+ "\n");
+		
+		Review myReview = new Review();
+		myReview.getFeed();
+		System.out.println(" " + myReview.comment()+"\n");
+		
+		User myuser = new User();
+		myuser.showPopUpMessage();
+		System.out.println(" " +myuser.socialMediaLogin());
+		
+		}
+	}
+
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@ package fiu.edu.SecondThought;
  * @author simon
  *create a 'User' class store all the user information
  */
-public class User {
+public class User extends SecondThought{
 	//variable declaration
 	private String userId;
 	private String password;
@@ -14,16 +14,6 @@ public class User {
 	private boolean isPremiummember;
 	private boolean isAnomymous;
 	private String displayName;
-	
-	//create constructor
-	public User(String userId, String password, String email, boolean isPremiummember, boolean isAnomymous, String displayName) {
-		this.userId=userId;
-		this.password=password;
-		this.email=email;
-		this.isPremiummember=isPremiummember;
-		this.isAnomymous=isAnomymous;
-		this.displayName=displayName;
-	}
 	
 	//return userid, password, email information to signup 
 	public String signUp() {
@@ -58,6 +48,14 @@ public class User {
 	//return user log out
 	public String Logout() {
 		return "Exit";
+	}
+	
+	//return social media user id and password
+	public String socialMediaLogin() {
+		userId = "jchen122";
+		password = "chen@!CH92";
+		email = "chenjiusheng1992@gmail.com";
+		return "UserID: " + userId +  "\n" + " Password: "+ password + "\n" + " E-mail: " + email;
 	}
 
 }

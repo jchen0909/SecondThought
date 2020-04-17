@@ -6,23 +6,15 @@ package fiu.edu.SecondThought;
  * @author simon
  *create a 'Employee' class store employee information
  */
-public class Employee {
+public class Employee extends SecondThought{
 	// variable declaration 
-	private int companyId;
-	private String companyName;
-	private String review;
-	private String employeeEmail;
-	private String status;
-	private boolean IsCompanyAdministrator;
+	protected String companyId = "1";
+	protected String companyName = "FIU";
+	protected String review = "This is a good company";
+	protected String employeeEmail = "jchen122@fiu.edu";
+	protected String status = "Activated";
+	protected boolean IsCompanyAdministrator;
 	
-	//create constructor
-	public Employee (int companyId, String companyName, String employeeEmail, String status, String review){
-		this.companyId=companyId;
-		this.review=review;
-		this.companyName=companyName;
-		this.status=status;
-		this.employeeEmail=employeeEmail;
-	 }
 	
 	//return review
 	public String giveReview() {
@@ -30,7 +22,7 @@ public class Employee {
 	}
 
 	//return company id
-	public int getCompanyID() {
+	public String getCompanyID() {
 		return companyId;
 	}
 	
@@ -40,12 +32,15 @@ public class Employee {
 	    }
 	
 	//return status
-	public String getStatus() {
-		return status;
+	public boolean getStatus() {
+		IsCompanyAdministrator = true;
+		return IsCompanyAdministrator;
 	}
 	
 	//return employee email
 	public String getEmployeeEmail() {
 		return employeeEmail;
 	}
+
+
 }

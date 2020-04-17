@@ -7,13 +7,13 @@ package fiu.edu.SecondThought;
  * @author simon
  *create 'SocialMediaReview' class store all the review in social media
  */
-public class SocialMediaReview {
+public class SocialMedia {
 	// variable declaration 
 	private String socialMediatype;
 	private String companyName;
 	
 	//create constructor
-	public SocialMediaReview(String socialMediatype, String companyName) {
+	public SocialMedia(String socialMediatype, String companyName) {
 		this.socialMediatype=socialMediatype;
 		this.companyName=companyName;
 	}
@@ -24,15 +24,9 @@ public class SocialMediaReview {
 		return socialMediatype + " Connected";
 	}
 	
-	//return the company name to get review
-	public String getReviews() {
-		companyName = "FIU";
-		return companyName;
-	}
-	
-	//return the company name to analyze review
-	public String analizeReviews() {
-		companyName = "FIU";
-		return companyName;
+	//return social media account information
+	public String getUserSocialMediaAcct() {
+		return "ID= \t  password=   ";
+				
 	}
 }

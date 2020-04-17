@@ -12,10 +12,6 @@ public class Admin {
 	//variable declaration 
 	private String adminLevel;       
 	
-	//create constructor
-	public Admin(String adminLevel) { 
-		this.adminLevel=adminLevel;
-	}
 	
 	public String getAccesslevel() {
 		//create the getAccesslevel method and return access level for admin
@@ -29,7 +25,7 @@ public class Admin {
 	
 	public String manageCompanyquestions() {
 		//create manageCompanyquestion method and return the number for company questions
-		return "Campany has 20 questions";
+		return "Company has 20 questions, edit question?";
 	}
 	
 	public String manageSocialmedia() {

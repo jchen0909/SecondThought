@@ -7,7 +7,7 @@ package fiu.edu.SecondThought;
  * @author simon
  *create a 'Company' class that store the company information
  */
-public class Company {
+public class Company extends SecondThought {
 	//variable declaration 
 	private String companyID; 
 	private String companyName;
@@ -17,27 +17,17 @@ public class Company {
 	private String country;
 	private String website;
 	private boolean IsPremium;
-	
-	//create constructor
-	public Company(String companyID, String companyName, String address, String city, String state,String country, String website, Boolean IsPremium) {
-		this.companyID=companyID;
-		this.companyName=companyName;
-		this.address=address;
-		this.city=city;
-		this.state=state;
-		this.country=country;
-		this.website=website;
-		this.IsPremium=IsPremium;
-	}
-	
+		
 	//return the Report for company
 	public String getReport() {
-		return companyID + " " +companyName+ " " + address + "," +city+ "," + state+ " "+ country+ "," + website;
+		companyName="IBM";
+		return " " + companyName;
 	}
 	
 	//return subscribe report
 	public String subscribeReport() {
-		return "subscribe company report";
+		companyName="Google";
+		return " " + companyName;
 	}
 	//return advertise company 
 	public String advertiseCompany() {

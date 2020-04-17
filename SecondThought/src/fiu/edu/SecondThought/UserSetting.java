@@ -7,7 +7,7 @@ package fiu.edu.SecondThought;
  * @author simon
  *create 'UserSetting' class to store all user settings
  */
-public class UserSetting {
+public class UserSetting extends SecondThought{
 	//variable declaration
 	private String theme;
 	private String color;
@@ -22,7 +22,7 @@ public class UserSetting {
 	
 	//return create dash board
 	public String createDashboard() {
-		return "Dashboard created";
+		return " Dashboard created: " + theme + " theme " + color + " color";
 	}
 	
 	//return color 
@@ -37,7 +37,7 @@ public class UserSetting {
 	
 	//return change general information
 	public String changeGeneralinfomation() {
-		return "Info changed";
+		return "User Infomation changed";
 	}
 	
 	//return communication preference 
